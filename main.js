@@ -77,7 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	.then( (res) => res.results)
 	.then( (res) => {
 		const results = res.map( (bookResp) => {
-			console.log(bookResp.isbns);
 			const { rank, 
 				isbns: [ book_isbn10 ], 
 				book_details: [ book_info ], 

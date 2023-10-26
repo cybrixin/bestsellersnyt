@@ -1,5 +1,6 @@
 import 'normalize.css';
 import './style.css';
+import './firebase.js';
 
 const $ = (selector, { parent = document } = {}) => selector === "body" ? document.body : (selector === "head" ? document.head : parent.querySelector(selector));
 

@@ -1,0 +1,3 @@
+Most images are generated through Artificial Intelligence (Microsoft Co-pilot) and then re-rendered through through Microsoft Designer. You are free to use any image unless any image is listed below which is the copyright or directly identifies Anweshan Roy Chowdhury ("Anweshan", "cybrixin", "cybrix.in") such as (but not limited to) logo, trademark objects etc.
+
+Please note `nyt-logo.png` is the official logo of New York Times. The site has no affiliation with New York Times, just wants to satisfy the bookworms out there.

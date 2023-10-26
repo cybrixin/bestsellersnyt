@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<!-- Other links -->
+	<link rel="canonical" href="https://cybrixin.github.io/bestsellersnyt" />
+
+	<!-- Web App Config -->
+	<title>Best Sellers - New York Times</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="theme-color" content="#3367d6">
+	<meta name="color-scheme" content="dark light">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-title" content="Best Sellers">
+	
+	<!-- Descriptions -->
+	<meta name="title" content="Best Sellers">
+	<meta name="keywords" content="Books, List, Best Sellers, New York, Amazon">
+	<meta name="author" content="Anweshan Roy Chowdhury">
+	<meta name="description" content="Bookworm? Read the top sellers from published by NYT.">
+	<meta name="domain" content="bestsellers.cybrix.in">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://bestsellers.cybrix.in/">
+	<meta property="og:title" content="Best Sellers">
+	<meta property="og:description" content="Bookworm? Read the top sellers from published by NYT.">
+	<meta name="og:domain" content="bestsellers.cybrix.in">
+	<meta property="og:image" content="https://bestsellers.cybrix.in/assets/cover.jpg">
+	
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:creator" content="@cybrixin">
+	<meta property="twitter:url" content="https://cybrix.in/">
+	<meta property="twitter:title" content="Best Sellers">
+	<meta property="twitter:description" content="Bookworm? Read the top sellers from published by NYT.">
+	<meta property="twitter:image" content="https://bestsellers.cybrix.in/assets/cover.jpg">
+	<meta property="twitter:domain" content="bestsellers.cybrix.in"/>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Rozha+One&display=swap" rel="stylesheet">
+
+</head>
+<body class="blur">
+	<div id="masthead">
+		<img src="/assets/nyt-logo.png" height="80" id="nyt-logo" alt="New York Times - Logo">
+	</div>
+	<div id="best-seller-titles">
+		<div class="book-container" data-book-rank="1">
+			<img class="book-cover " data-cover src="https://books.google.com/books/content?id=6_CLEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api" />
+			<h2 class="book-h2">
+				<a class="book-link" href="https://www.amazon.com/dp/1649374046?tag=NYTBSREV-20" data-book-link>FOURTH WING</a>
+			</h2>
+			<h4 class="book-h2" book-author>By Rebecca Yarros</h4>
+			<h4 class="book-publisher" book-publisher>Red Tower</h4>
+			<p class="book-p" book-summary>Violet Sorrengail is urged by the commanding general, who also is her mother, to become a candidate for the elite dragon riders.</p>
+			<div class="book-stats">
+				<hr class="book-stats-hr">
+				<p class="book-stats-p" data-week>Last Week: 1</p>
+				<p class="book-stats-p" data-list>Weeks on list: 23</p>
+			</div>
+		</div>
+	</div>
+	<template id="best-seller-template">
+		<div class="book-container" data-book-rank>
+			<img class="book-cover blur" src="/assets/bk-placeholder.png" data-book-cover />
+			<h2 class="book-h2">
+				<a target="_blank" title="Amazon Product Link" class="book-product-link" data-book-link><span class="book-title" data-book-title></span></a>
+			</h2>
+			<h4 class="book-h2" data-book-author></h4>
+			<h4 class="book-publisher" data-book-publisher></h4>
+			<p class="book-p" data-book-description></p>
+			<div class="book-stats">
+				<hr class="book-stats-hr">
+				<p class="book-stats-p">Last Week: <span data-book-ranklastweek></span></p>
+				<p class="book-stats-p">Weeks on list: <span data-book-weeksonlist></span></p>
+			</div>
+		</div>
+	</template>
+	<script type="module" src="/main.js"></script>
+</body>
+</html>

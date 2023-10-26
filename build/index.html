@@ -1,89 +1,92 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.5.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.5.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+	<!-- Other links -->
+	<link rel="canonical" href="https://cybrixin.github.io/bestsellersnyt" />
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+	<!-- Web App Config -->
+	<title>Best Sellers - New York Times</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="theme-color" content="#3367d6">
+	<meta name="color-scheme" content="dark light">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-title" content="Best Sellers">
+	
+	<!-- Descriptions -->
+	<meta name="title" content="Best Sellers">
+	<meta name="keywords" content="Books, List, Best Sellers, New York, Amazon">
+	<meta name="author" content="Anweshan Roy Chowdhury">
+	<meta name="description" content="Bookworm? Read the top sellers from published by NYT.">
+	<meta name="domain" content="bestsellers.cybrix.in">
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://bestsellers.cybrix.in/">
+	<meta property="og:title" content="Best Sellers">
+	<meta property="og:description" content="Bookworm? Read the top sellers from published by NYT.">
+	<meta name="og:domain" content="bestsellers.cybrix.in">
+	<meta property="og:image" content="https://bestsellers.cybrix.in/assets/cover.jpg">
+	
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:creator" content="@cybrixin">
+	<meta property="twitter:url" content="https://cybrix.in/">
+	<meta property="twitter:title" content="Best Sellers">
+	<meta property="twitter:description" content="Bookworm? Read the top sellers from published by NYT.">
+	<meta property="twitter:image" content="https://bestsellers.cybrix.in/assets/cover.jpg">
+	<meta property="twitter:domain" content="bestsellers.cybrix.in"/>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Rozha+One&display=swap" rel="stylesheet">
+
+  <script type="module" crossorigin src="/assets/index-deb986ab.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/idb-05681199.js">
+  <link rel="modulepreload" crossorigin href="/assets/@firebase-fd99c375.js">
+  <link rel="modulepreload" crossorigin href="/assets/firebase-8a31e023.js">
+  <link rel="stylesheet" href="/assets/index-f20ff8e9.css">
+  <link rel="stylesheet" href="/assets/normalize-9d9ae4af.css">
+</head>
+<body class="blur">
+	<div id="masthead">
+		<img src="/assets/nyt-logo.png" height="80" id="nyt-logo" alt="New York Times - Logo">
+	</div>
+	<div id="best-seller-titles">
+		<div class="book-container" data-book-rank="1">
+			<img class="book-cover " data-cover src="https://books.google.com/books/content?id=6_CLEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api" />
+			<h2 class="book-h2">
+				<a class="book-link" href="https://www.amazon.com/dp/1649374046?tag=NYTBSREV-20" data-book-link>FOURTH WING</a>
+			</h2>
+			<h4 class="book-h2" book-author>By Rebecca Yarros</h4>
+			<h4 class="book-publisher" book-publisher>Red Tower</h4>
+			<p class="book-p" book-summary>Violet Sorrengail is urged by the commanding general, who also is her mother, to become a candidate for the elite dragon riders.</p>
+			<div class="book-stats">
+				<hr class="book-stats-hr">
+				<p class="book-stats-p" data-week>Last Week: 1</p>
+				<p class="book-stats-p" data-list>Weeks on list: 23</p>
+			</div>
+		</div>
+	</div>
+	<template id="best-seller-template">
+		<div class="book-container" data-book-rank>
+			<img class="book-cover blur" src="/assets/bk-placeholder.png" data-book-cover />
+			<h2 class="book-h2">
+				<a target="_blank" title="Amazon Product Link" class="book-product-link" data-book-link><span class="book-title" data-book-title></span></a>
+			</h2>
+			<h4 class="book-h2" data-book-author></h4>
+			<h4 class="book-publisher" data-book-publisher></h4>
+			<p class="book-p" data-book-description></p>
+			<div class="book-stats">
+				<hr class="book-stats-hr">
+				<p class="book-stats-p">Last Week: <span data-book-ranklastweek></span></p>
+				<p class="book-stats-p">Weeks on list: <span data-book-weeksonlist></span></p>
+			</div>
+		</div>
+	</template>
+	
+</body>
 </html>
